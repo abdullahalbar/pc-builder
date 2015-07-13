@@ -264,7 +264,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pc-icone-4772-48.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-kf-FuS">
-                                                    <rect key="frame" x="26" y="8" width="27" height="27"/>
+                                                    <rect key="frame" x="18" y="8" width="27" height="27"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -375,6 +375,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9g-Pf-VqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1765" y="780"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="1hw-R3-jEJ">
+            <objects>
+                <viewController id="3bF-FP-eZn" customClass="PhotoViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SBx-ov-KxH"/>
+                        <viewControllerLayoutGuide type="bottom" id="gGd-Gv-QTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E9q-xh-vaD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanvillage" translatesAutoresizingMaskIntoConstraints="NO" id="qSY-AR-Izr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qSY-AR-Izr" secondAttribute="trailing" id="5Lr-JF-hI1"/>
+                            <constraint firstItem="qSY-AR-Izr" firstAttribute="leading" secondItem="E9q-xh-vaD" secondAttribute="leading" id="HY0-0G-1zk"/>
+                            <constraint firstItem="qSY-AR-Izr" firstAttribute="top" secondItem="E9q-xh-vaD" secondAttribute="top" id="Teh-xx-sae"/>
+                            <constraint firstItem="qSY-AR-Izr" firstAttribute="bottom" secondItem="gGd-Gv-QTC" secondAttribute="top" id="nzU-qh-1vV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo" id="2xA-iw-K9M">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="5mv-sJ-A3z"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="5mv-sJ-A3z" id="DIz-qN-t6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbN-qW-EhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2577" y="780"/>
         </scene>
     </scenes>
     <resources>
