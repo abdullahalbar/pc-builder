@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8317B7E91B54060F00A3252B /* PersonalComputer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317B7E81B54060F00A3252B /* PersonalComputer.swift */; };
+		B8AE88371B54230700BD4C7B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AE88361B54230700BD4C7B /* SWRevealViewController.m */; };
+		B8AE883C1B54270000BD4C7B /* pc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE883B1B54270000BD4C7B /* pc.swift */; };
 		B8F78B161B504A6B003C95AA /* dashboard-low-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F78B151B504A6B003C95AA /* dashboard-low-512.png */; };
 		B8F78B181B504C25003C95AA /* 503763381.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8F78B171B504C25003C95AA /* 503763381.jpg */; };
 		B8F78B1A1B504C68003C95AA /* 1436572464_processor.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F78B191B504C68003C95AA /* 1436572464_processor.png */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		8317B7E81B54060F00A3252B /* PersonalComputer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalComputer.swift; sourceTree = "<group>"; };
+		B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8AE88351B54230700BD4C7B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../SWRevealViewController-master 4/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		B8AE88361B54230700BD4C7B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../SWRevealViewController-master 4/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		B8AE883B1B54270000BD4C7B /* pc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pc.swift; sourceTree = "<group>"; };
 		B8F78B151B504A6B003C95AA /* dashboard-low-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dashboard-low-512.png"; path = "../../Desktop/dashboard-low-512.png"; sourceTree = "<group>"; };
 		B8F78B171B504C25003C95AA /* 503763381.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 503763381.jpg; path = ../../Desktop/503763381.jpg; sourceTree = "<group>"; };
 		B8F78B191B504C68003C95AA /* 1436572464_processor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1436572464_processor.png; path = ../1436572464_processor.png; sourceTree = "<group>"; };
@@ -77,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8AE88381B54232000BD4C7B /* sv */ = {
+			isa = PBXGroup;
+			children = (
+				B8AE88351B54230700BD4C7B /* SWRevealViewController.h */,
+				B8AE88361B54230700BD4C7B /* SWRevealViewController.m */,
+				B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */,
+			);
+			name = sv;
+			sourceTree = "<group>";
+		};
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,7 @@
 				B8F78B171B504C25003C95AA /* 503763381.jpg */,
 				B8F78B191B504C68003C95AA /* 1436572464_processor.png */,
 				B8F78B1B1B504D4D003C95AA /* pc-icone-4772-48.png */,
+				B8AE88381B54232000BD4C7B /* sv */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +131,7 @@
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
+				B8AE883B1B54270000BD4C7B /* pc.swift */,
 			);
 			path = SidebarMenu;
 			sourceTree = "<group>";
@@ -255,7 +273,9 @@
 			files = (
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
+				B8AE883C1B54270000BD4C7B /* pc.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
+				B8AE88371B54230700BD4C7B /* SWRevealViewController.m in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				8317B7E91B54060F00A3252B /* PersonalComputer.swift in Sources */,
@@ -382,9 +402,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -392,9 +415,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -402,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -413,6 +439,8 @@
 				INFOPLIST_FILE = SidebarMenuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenuTests/SidebarMenuTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SidebarMenu.app/SidebarMenu";
 			};
 			name = Debug;
@@ -421,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -428,6 +457,7 @@
 				INFOPLIST_FILE = SidebarMenuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenuTests/SidebarMenuTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SidebarMenu.app/SidebarMenu";
 			};
 			name = Release;
