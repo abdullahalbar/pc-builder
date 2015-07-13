@@ -45,9 +45,9 @@
 		8317B7EE1B54325200A3252B /* pc-icone-4772-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pc-icone-4772-48.png"; path = "../../Documents/pc-icone-4772-48.png"; sourceTree = "<group>"; };
 		8317B7F01B54326600A3252B /* 1436572464_processor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1436572464_processor.png; path = ../../Documents/1436572464_processor.png; sourceTree = "<group>"; };
 		8317B7F21B54329C00A3252B /* SWRevealViewController-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SWRevealViewController-master"; path = "../../Documents/untitled folder/SWRevealViewController-master"; sourceTree = "<group>"; };
-		8317B7F61B54330F00A3252B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../Documents/untitled folder/SWRevealViewController-master/SWRevealViewController.h"; sourceTree = "<group>"; };
+		8317B7F61B54330F00A3252B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Documents/untitled folder/SWRevealViewController-master/SWRevealViewController.h"; sourceTree = "<group>"; };
 		8317B7F91B54333D00A3252B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../.Trash/SWRevealViewController.m; sourceTree = "<group>"; };
-		B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		B8AE883B1B54270000BD4C7B /* pc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pc.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				8317B7F21B54329C00A3252B /* SWRevealViewController-master */,
-				B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */,
-				B8AE883D1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png */,
 			);
 			name = sv;
 			sourceTree = "<group>";
@@ -107,7 +105,6 @@
 				8317B7F01B54326600A3252B /* 1436572464_processor.png */,
 				8317B7EE1B54325200A3252B /* pc-icone-4772-48.png */,
 				8317B7F91B54333D00A3252B /* SWRevealViewController.m */,
-				8317B7F61B54330F00A3252B /* SWRevealViewController.h */,
 				B8AE88381B54232000BD4C7B /* sv */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +133,8 @@
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
 				B8AE883B1B54270000BD4C7B /* pc.swift */,
+				8317B7F61B54330F00A3252B /* SWRevealViewController.h */,
+				B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */,
 			);
 			path = SidebarMenu;
 			sourceTree = "<group>";
