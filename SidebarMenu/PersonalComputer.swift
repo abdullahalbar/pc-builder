@@ -3,7 +3,7 @@
 //  SidebarMenu
 //
 //  Created by Christopher Geleske on 7/13/15.
-//  Copyright © 2015 AppCoda. All rights reserved.
+//  Copyright © 2015 . All rights reserved.
 //
 
 import UIKit
