@@ -82,9 +82,9 @@
 				F47029F21A7F27DB00E30A3C /* SidebarMenu */,
 				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
 				F47029F11A7F27DB00E30A3C /* Products */,
-				B8F78B151B504A6B003C95AA /* dashboard-low-512.png */,
 				B8F78B171B504C25003C95AA /* 503763381.jpg */,
 				B8F78B191B504C68003C95AA /* 1436572464_processor.png */,
+				B8F78B151B504A6B003C95AA /* dashboard-low-512.png */,
 				B8F78B1B1B504D4D003C95AA /* pc-icone-4772-48.png */,
 			);
 			sourceTree = "<group>";
