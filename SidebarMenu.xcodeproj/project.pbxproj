@@ -10,6 +10,7 @@
 		8317B7E91B54060F00A3252B /* PersonalComputer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8317B7E81B54060F00A3252B /* PersonalComputer.swift */; };
 		B8AE88371B54230700BD4C7B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AE88361B54230700BD4C7B /* SWRevealViewController.m */; };
 		B8AE883C1B54270000BD4C7B /* pc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE883B1B54270000BD4C7B /* pc.swift */; };
+		B8AE883E1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png in Resources */ = {isa = PBXBuildFile; fileRef = B8AE883D1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png */; };
 		B8F78B161B504A6B003C95AA /* dashboard-low-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F78B151B504A6B003C95AA /* dashboard-low-512.png */; };
 		B8F78B181B504C25003C95AA /* 503763381.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8F78B171B504C25003C95AA /* 503763381.jpg */; };
 		B8F78B1A1B504C68003C95AA /* 1436572464_processor.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F78B191B504C68003C95AA /* 1436572464_processor.png */; };
@@ -43,6 +44,7 @@
 		B8AE88351B54230700BD4C7B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../SWRevealViewController-master 4/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		B8AE88361B54230700BD4C7B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../SWRevealViewController-master 4/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		B8AE883B1B54270000BD4C7B /* pc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pc.swift; sourceTree = "<group>"; };
+		B8AE883D1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2015-07-13 09.43.30.png"; path = "../Screenshot 2015-07-13 09.43.30.png"; sourceTree = "<group>"; };
 		B8F78B151B504A6B003C95AA /* dashboard-low-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dashboard-low-512.png"; path = "../../Desktop/dashboard-low-512.png"; sourceTree = "<group>"; };
 		B8F78B171B504C25003C95AA /* 503763381.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 503763381.jpg; path = ../../Desktop/503763381.jpg; sourceTree = "<group>"; };
 		B8F78B191B504C68003C95AA /* 1436572464_processor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1436572464_processor.png; path = ../1436572464_processor.png; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				B8AE88351B54230700BD4C7B /* SWRevealViewController.h */,
 				B8AE88361B54230700BD4C7B /* SWRevealViewController.m */,
 				B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */,
+				B8AE883D1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png */,
 			);
 			name = sv;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B8F78B161B504A6B003C95AA /* dashboard-low-512.png in Resources */,
 				F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */,
 				F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */,
+				B8AE883E1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png in Resources */,
 				B8F78B1C1B504D4D003C95AA /* pc-icone-4772-48.png in Resources */,
 				F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */,
 				B8F78B1A1B504C68003C95AA /* 1436572464_processor.png in Resources */,
