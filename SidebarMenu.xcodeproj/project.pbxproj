@@ -90,6 +90,7 @@
 			children = (
 				8317B7F21B54329C00A3252B /* SWRevealViewController-master */,
 				B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */,
+				B8AE883D1B54321B00BD4C7B /* Screenshot 2015-07-13 09.43.30.png */,
 			);
 			name = sv;
 			sourceTree = "<group>";
