@@ -27,9 +27,14 @@ class GraphicsCardGPU: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
 
 }
@@ -43,9 +48,14 @@ class ProcessorCPU: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -59,9 +69,14 @@ class HeatsinkHSF: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -75,9 +90,14 @@ class MotherBoard: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -91,9 +111,14 @@ class RAM: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -107,9 +132,14 @@ class HDD: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -123,9 +153,14 @@ class SDD: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -139,9 +174,14 @@ class PowerSupply: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
@@ -155,9 +195,14 @@ class Case: PersonalComputer{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String){
+    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.brand = brand
+        self.hidden = hidden
+        self.rating = rating
+        self.price = price
+        self.partDescription = partDescription
     }
     
 }
