@@ -49,10 +49,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Builds" id="YdA-HD-78b">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="rhH-Mc-GbH"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="rhH-Mc-GbH"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="rhH-Mc-GbH" id="QVi-fG-i4C"/>
+                        <outlet property="menuButton" destination="rhH-Mc-GbH" id="y1k-CF-nhA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TD-bi-rsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,7 +226,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="JNk-Za-Gsz" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fLP-m1-Juf"/>
+                                            <segue destination="JNk-Za-Gsz" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="urE-fs-wJv"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dcS-Um-JRf">
@@ -344,7 +344,7 @@
         <!--Parts-->
         <scene sceneID="1hw-R3-jEJ">
             <objects>
-                <viewController id="3bF-FP-eZn" customClass="pcViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3bF-FP-eZn" customClass="PartsViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SBx-ov-KxH"/>
                         <viewControllerLayoutGuide type="bottom" id="gGd-Gv-QTC"/>
@@ -371,12 +371,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Parts" id="2xA-iw-K9M">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="5mv-sJ-A3z"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="f23-3p-p2H"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="f23-3p-p2H" id="69V-hX-ktn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbN-qW-EhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="2125"/>
+            <point key="canvasLocation" x="289" y="2076"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ObQ-OO-0Xf">
@@ -394,7 +397,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0o-26-nQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="1375"/>
+            <point key="canvasLocation" x="289" y="1354"/>
         </scene>
     </scenes>
     <resources>
