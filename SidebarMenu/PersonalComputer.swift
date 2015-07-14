@@ -8,26 +8,26 @@
 
 import UIKit
 
-class PersonalComputer: NSObject {
+class PCParts: NSObject {
 
     var totalPrice = 0.0
     var quality = ""
-    
+    var name = ""
     
     
     
 }
 
-class GraphicsCardGPU: PersonalComputer{
+class GraphicsCardGPU: PCParts{
     
-    var name = ""
+    var type = "Graphics Proccessing Unit"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -39,16 +39,16 @@ class GraphicsCardGPU: PersonalComputer{
 
 }
 
-class ProcessorCPU: PersonalComputer{
+class ProcessorCPU: PCParts{
     
-    var name = ""
+    var type = "Core Proccessing Unit"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -60,16 +60,16 @@ class ProcessorCPU: PersonalComputer{
     
 }
 
-class HeatsinkHSF: PersonalComputer{
+class HeatsinkHSF: PCParts{
     
-    var name = ""
+    var type = "Heatsink Fan"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -81,16 +81,16 @@ class HeatsinkHSF: PersonalComputer{
     
 }
 
-class MotherBoard: PersonalComputer{
+class MotherBoard: PCParts{
     
-    var name = ""
+    var type = "Mother Board"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -102,16 +102,16 @@ class MotherBoard: PersonalComputer{
     
 }
 
-class RAM: PersonalComputer{
+class RAM: PCParts{
     
-    var name = ""
+    var type = "Random Access Memory"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -123,16 +123,16 @@ class RAM: PersonalComputer{
     
 }
 
-class HDD: PersonalComputer{
+class HDD: PCParts{
     
-    var name = ""
+    var type = "Hard Drive-Disk"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -144,16 +144,16 @@ class HDD: PersonalComputer{
     
 }
 
-class SDD: PersonalComputer{
+class SDD: PCParts{
     
-    var name = ""
+    var type = "Solid State Drive"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -165,16 +165,16 @@ class SDD: PersonalComputer{
     
 }
 
-class PowerSupply: PersonalComputer{
+class PowerSupply: PCParts{
     
-    var name = ""
+    var type = "PowerSupply"
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -186,16 +186,15 @@ class PowerSupply: PersonalComputer{
     
 }
 
-class Case: PersonalComputer{
+class Case: PCParts{
     
-    var name = ""
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand

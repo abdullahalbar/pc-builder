@@ -373,9 +373,6 @@
                     <navigationItem key="navigationItem" title="Parts" id="2xA-iw-K9M">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="5mv-sJ-A3z"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="5mv-sJ-A3z" id="DIz-qN-t6J"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbN-qW-EhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

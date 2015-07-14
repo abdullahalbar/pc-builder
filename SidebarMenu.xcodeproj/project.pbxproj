@@ -14,7 +14,7 @@
 		8317B7F11B54326600A3252B /* 1436572464_processor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317B7F01B54326600A3252B /* 1436572464_processor.png */; };
 		8317B7F31B54329C00A3252B /* SWRevealViewController-master in Resources */ = {isa = PBXBuildFile; fileRef = 8317B7F21B54329C00A3252B /* SWRevealViewController-master */; };
 		8317B7FA1B54333D00A3252B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8317B7F91B54333D00A3252B /* SWRevealViewController.m */; };
-		B8AE883C1B54270000BD4C7B /* pc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE883B1B54270000BD4C7B /* pc.swift */; };
+		B8AE883C1B54270000BD4C7B /* PartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE883B1B54270000BD4C7B /* PartsViewController.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -48,7 +48,7 @@
 		8317B7F61B54330F00A3252B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Documents/untitled folder/SWRevealViewController-master/SWRevealViewController.h"; sourceTree = "<group>"; };
 		8317B7F91B54333D00A3252B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../.Trash/SWRevealViewController.m; sourceTree = "<group>"; };
 		B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		B8AE883B1B54270000BD4C7B /* pc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pc.swift; sourceTree = "<group>"; };
+		B8AE883B1B54270000BD4C7B /* PartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsViewController.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
-				B8AE883B1B54270000BD4C7B /* pc.swift */,
+				B8AE883B1B54270000BD4C7B /* PartsViewController.swift */,
 				8317B7F61B54330F00A3252B /* SWRevealViewController.h */,
 				B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */,
 			);
@@ -277,7 +277,7 @@
 			files = (
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
-				B8AE883C1B54270000BD4C7B /* pc.swift in Sources */,
+				B8AE883C1B54270000BD4C7B /* PartsViewController.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
