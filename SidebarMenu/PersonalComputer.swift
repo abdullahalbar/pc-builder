@@ -144,7 +144,7 @@ class HDD: PCParts{
     
 }
 
-class SDD: PCParts{
+class SSD: PCParts{
     
     var type = "Solid State Drive"
     var brand = ""

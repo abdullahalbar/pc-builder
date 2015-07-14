@@ -11,11 +11,14 @@ import UIKit
 class PartsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
     
-    var parts : [PCParts] = []
+    var parts: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        parts = ["Graphics Proccessing Unit", "Central Proccessing Unit", "Heatsink/Fan", "Motherboard", "Random Access Memory", "HDD", "SSD", "Power Supply", "Case"]
+        self.tableView.reloadData()
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -31,8 +34,14 @@ class PartsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
-        var partz = parts[indexPath.row] as PCParts
-        cell.textLabel?.text = partz.name
+        let part = parts[indexPath.row] as String
+        
+        print([parts])
+        
+        //var partsArray = [[Any]]()
+        //partsArray[0] = [GraphicsCardGPU]()
+        
+        cell.textLabel?.text = part
         return cell
     }
     
