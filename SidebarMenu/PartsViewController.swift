@@ -62,6 +62,10 @@ class PartsViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
+      
+            let dvc = segue.destinationViewController as! DetailViewController
+            let index = tableView.indexPathForSelectedRow?.row
+            dvc.parts = parts[index!]
+        }
     
 }

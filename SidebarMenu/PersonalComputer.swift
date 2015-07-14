@@ -83,7 +83,8 @@ class HeatsinkHSF: PCParts{
 
 class MotherBoard: PCParts{
     
-    var type = "Mother Board"
+    var type = "Motherboard"
+    
     var brand = ""
     var hidden = true
     var rating = 0.0

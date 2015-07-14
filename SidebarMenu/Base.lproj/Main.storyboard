@@ -373,6 +373,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4s1-2y-kAA" kind="show" id="6PS-sw-h97"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -394,6 +397,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbN-qW-EhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="2076"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="8Pf-Wc-gEW">
+            <objects>
+                <viewController id="4s1-2y-kAA" customClass="DetailViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kcj-2R-DwF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ihD-mU-vSG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n91-09-eEe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePX-1B-p8G">
+                                <rect key="frame" x="-113" y="20" width="713" height="44"/>
+                                <items>
+                                    <navigationItem id="lbg-bq-b4F"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBarTitle" destination="ePX-1B-p8G" id="qf8-JL-94l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCt-Tl-6kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="2076"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ObQ-OO-0Xf">
