@@ -411,9 +411,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePX-1B-p8G">
-                                <rect key="frame" x="-113" y="20" width="713" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <navigationItem id="lbg-bq-b4F"/>
+                                    <navigationItem title="Title" id="ONm-Ip-hcv"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -421,6 +421,7 @@
                     </view>
                     <connections>
                         <outlet property="navBarTitle" destination="ePX-1B-p8G" id="qf8-JL-94l"/>
+                        <outlet property="realNavBarTitle" destination="ONm-Ip-hcv" id="vVm-7e-Nr1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCt-Tl-6kf" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -11,13 +11,14 @@ import UIKit
 class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var navBarTitle: UINavigationBar!
+    @IBOutlet weak var realNavBarTitle: UINavigationItem!
 
     var parts : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(parts)
+        //realNavBarTitle.description =
     }
 
     override func didReceiveMemoryWarning() {
