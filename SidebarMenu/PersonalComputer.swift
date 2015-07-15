@@ -126,7 +126,7 @@ class RAM: PCParts{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(type: String, name: String, brand: String, speed: String, technology: String, numberofsticks: String, memoryStorageCapacity: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, speed: Int, technology: String, numberofsticks: String, memoryStorageCapacity: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
