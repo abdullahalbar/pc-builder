@@ -26,8 +26,8 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     var casePartsList: Case!
     
     //Here comes all of the products
-    
-    gPUPartsList = [GraphicsCardGPU( "R7 240")]
+    //PUT PRODUCTS HERE
+    gPUPartsList = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
