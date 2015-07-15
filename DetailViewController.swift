@@ -10,9 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var navBarTitle: UINavigationBar!
-    @IBOutlet weak var realNavBarTitle: UINavigationItem!
+    
     @IBOutlet weak var realRealNavBarTitle: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     //PUT PRODUCTS HERE
 
@@ -33,6 +33,9 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        scrollView.contentSize.height = self.view.frame.height * 2
+
         switch parts{
         case "Graphics Proccessing Unit" :
                 self.correctList = gPUPartsList
