@@ -353,7 +353,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y1d-rj-TXf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y1d-rj-TXf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -385,6 +385,11 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y1d-rj-TXf" firstAttribute="centerX" secondItem="E9q-xh-vaD" secondAttribute="centerX" id="DOM-xY-Ral"/>
+                            <constraint firstItem="Y1d-rj-TXf" firstAttribute="leading" secondItem="E9q-xh-vaD" secondAttribute="leadingMargin" constant="-20" id="Q88-Kk-6wt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y1d-rj-TXf" secondAttribute="trailing" constant="-20" id="j5x-RZ-VlV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Parts" id="2xA-iw-K9M">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="f23-3p-p2H"/>
@@ -416,12 +421,45 @@
                                     <navigationItem title="Title" id="ONm-Ip-hcv"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcO-VX-ZQP">
+                                <rect key="frame" x="153" y="64" width="294" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zSo-kG-Cmc">
+                                <rect key="frame" x="0.0" y="114" width="600" height="625"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ZhF-hT-Zwq" style="IBUITableViewCellStyleDefault" id="VRE-YO-3lh">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VRE-YO-3lh" id="qD6-qP-hCp">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZhF-hT-Zwq">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vcO-VX-ZQP" firstAttribute="centerX" secondItem="n91-09-eEe" secondAttribute="centerX" id="1Ij-Q0-AFS"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="navBarTitle" destination="ePX-1B-p8G" id="qf8-JL-94l"/>
                         <outlet property="realNavBarTitle" destination="ONm-Ip-hcv" id="vVm-7e-Nr1"/>
+                        <outlet property="realRealNavBarTitle" destination="vcO-VX-ZQP" id="ow6-JD-kFp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCt-Tl-6kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
