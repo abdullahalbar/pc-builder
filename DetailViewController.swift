@@ -77,7 +77,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath) as UITableViewCell
         let part = correctList[indexPath.row] as! String
         
         cell.textLabel?.text = part
