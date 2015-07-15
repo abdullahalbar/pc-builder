@@ -88,7 +88,7 @@ class HeatsinkHSF: PCParts{
         self.price = price
         self.partDescription = partDescription
     }
-    
+ // HeatsinfHSF (type: "Heatsink Fan", name: , brand: "whatever,
 }
 
 class MotherBoard: PCParts{

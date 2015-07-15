@@ -14,23 +14,49 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     @IBOutlet weak var realNavBarTitle: UINavigationItem!
     @IBOutlet weak var realRealNavBarTitle: UILabel!
     
+    //PUT PRODUCTS HERE
+
     var parts : String!
-    var gPUPartsList: GraphicsCardGPU!
-    var cPUPartsList: ProcessorCPU!
-    var hSFPartsList: HeatsinkHSF!
-    var mBPartsList: MotherBoard!
-    var rAMPartsList: RAM!
-    var hDDPartsList: HDD!
-    var sSDPartsList: SSD!
-    var pSUPartsList: PowerSupply!
-    var casePartsList: Case!
+    var gPUPartsList: [GraphicsCardGPU!] = []
+    var cPUPartsList: [ProcessorCPU!] = []
+    var hSFPartsList: [HeatsinkHSF!] = []
+    var mBPartsList: [MotherBoard!] = []
+    var rAMPartsList: [RAM!] = []
+    var hDDPartsList: [HDD!] = []
+    var sSDPartsList: [SSD!] = []
+    var pSUPartsList: [PowerSupply!] = []
+    var casePartsList: [Case!] = []
+    var correctList: [Any] = []
     
     //Here comes all of the products
-    //PUT PRODUCTS HERE
-    gPUPartsList = []
+    //gPUPartsList = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch parts{
+        case "Graphics Proccessing Unit" :
+                self.correctList = gPUPartsList
+        case "Central Proccessing Unit" :
+                self.correctList = cPUPartsList
+        case "Heatsink/Fan" :
+                self.correctList = hSFPartsList
+        case "Motherboard" :
+                self.correctList = mBPartsList
+        case "Random Access Memory" :
+                self.correctList = rAMPartsList
+        case "HDD" :
+                self.correctList = hDDPartsList
+        case "SSD" :
+                self.correctList = sSDPartsList
+        case "Power Supply" :
+                self.correctList = pSUPartsList
+        case "Case" :
+                self.correctList = casePartsList
+        default :
+                print("error incorrect list")
+        }
+        
+    
         print(parts)
         realRealNavBarTitle.text = parts
         
@@ -42,19 +68,14 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return parts.count
+        return correctList.count
     }
 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        switch parts{
-        case: "Graphics Proccessing Unit" {
-            
-            }
-            
-        }
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
-        let part = parts[indexPath.row] as String
+        let part = correctList[indexPath.row] as! String
         
         cell.textLabel?.text = part
         return cell
@@ -62,7 +83,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
-            parts.removeAtIndex(indexPath.row)
+            correctList.removeAtIndex(indexPath.row)
             tableView.reloadData()
         }
     }
