@@ -15,6 +15,7 @@
 		8317B7F31B54329C00A3252B /* SWRevealViewController-master in Resources */ = {isa = PBXBuildFile; fileRef = 8317B7F21B54329C00A3252B /* SWRevealViewController-master */; };
 		8317B7FA1B54333D00A3252B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8317B7F91B54333D00A3252B /* SWRevealViewController.m */; };
 		835FB2751B559BD70029CB6E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835FB2741B559BD70029CB6E /* DetailViewController.swift */; };
+		83E0D3C91B56A9EE0045C0E1 /* PartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0D3C81B56A9EE0045C0E1 /* PartsTableViewController.swift */; };
 		B8AE883C1B54270000BD4C7B /* PartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE883B1B54270000BD4C7B /* PartsViewController.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		8317B7F61B54330F00A3252B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Documents/untitled folder/SWRevealViewController-master/SWRevealViewController.h"; sourceTree = "<group>"; };
 		8317B7F91B54333D00A3252B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../.Trash/SWRevealViewController.m; sourceTree = "<group>"; };
 		835FB2741B559BD70029CB6E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		83E0D3C81B56A9EE0045C0E1 /* PartsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsTableViewController.swift; sourceTree = "<group>"; };
 		B8AE88341B54230700BD4C7B /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		B8AE883B1B54270000BD4C7B /* PartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsViewController.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
+				83E0D3C81B56A9EE0045C0E1 /* PartsTableViewController.swift */,
 				835FB2741B559BD70029CB6E /* DetailViewController.swift */,
 				F4702A151A7F342F00E30A3C /* MapKit.framework */,
 				F47029F21A7F27DB00E30A3C /* SidebarMenu */,
@@ -283,6 +286,7 @@
 				B8AE883C1B54270000BD4C7B /* PartsViewController.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
+				83E0D3C91B56A9EE0045C0E1 /* PartsTableViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				8317B7FA1B54333D00A3252B /* SWRevealViewController.m in Sources */,
 				835FB2751B559BD70029CB6E /* DetailViewController.swift in Sources */,

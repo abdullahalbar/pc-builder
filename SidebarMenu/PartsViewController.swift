@@ -36,7 +36,7 @@ class PartsViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
         let part = parts[indexPath.row] as String
         
-        print([parts])
+        //print([parts])
         
         //var partsArray = [[Any]]()
         //partsArray[0] = [GraphicsCardGPU]()
