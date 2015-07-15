@@ -45,12 +45,12 @@ class PartsViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.Delete {
-            parts.removeAtIndex(indexPath.row)
-            tableView.reloadData()
-        }
-    }
+//    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        //if editingStyle == UITableViewCellEditingStyle.Delete {
+//            //parts.removeAtIndex(indexPath.row)
+//          //  tableView.reloadData()
+//        //}
+//    }
 
     
     override func didReceiveMemoryWarning() {

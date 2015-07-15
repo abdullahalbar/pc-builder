@@ -48,7 +48,7 @@ class ProcessorCPU: PCParts{
     
     var type = "Core Proccessing Unit"
     var brand = ""
-    var socket = 0
+    var socket = ""
     var processorCount = 0
     var cpuSpeed = ""
     var ramsupported = ""
@@ -57,7 +57,7 @@ class ProcessorCPU: PCParts{
     var price = 0.0
     var partDescription = ""
     
-    convenience init(type: String, brand: String, socket: Int, processorCount: Int, cpuSpeed: String, ramsupported: String, name: String,  hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, brand: String, socket: String, processorCount: Int, cpuSpeed: String, ramsupported: String, name: String,  hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -117,19 +117,23 @@ class RAM: PCParts{
     
     var type = "Random Access Memory"
     var brand = ""
-    var speed = ""
+    var speed = 0
     var technology = ""
-    var numberofsticks = ""
+    var numberofsticks = 0
     var memoryStorageCapacity = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(type: String, name: String, brand: String, speed: Int, technology: String, numberofsticks: String, memoryStorageCapacity: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, speed: Int, technology: String, numberofsticks: Int, memoryStorageCapacity: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
+        self.speed = speed
+        self.technology = technology
+        self.numberofsticks = numberofsticks
+        self.memoryStorageCapacity = memoryStorageCapacity
         self.hidden = hidden
         self.rating = rating
         self.price = price
