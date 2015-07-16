@@ -438,6 +438,9 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="c1c-K0-bCl" kind="show" id="EGV-QU-Xre"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <sections/>
@@ -466,16 +469,17 @@
                     <connections>
                         <outlet property="realRealNavBarTitle" destination="vcO-VX-ZQP" id="ow6-JD-kFp"/>
                         <outlet property="scrollView" destination="BXW-xo-IPr" id="uA3-y8-kCl"/>
+                        <outlet property="tableView" destination="zSo-kG-Cmc" id="KxK-Sr-Mbo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCt-Tl-6kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="991" y="2076"/>
         </scene>
-        <!--View Controller-->
+        <!--Parts Table View Controller-->
         <scene sceneID="te1-x2-wAZ">
             <objects>
-                <viewController id="c1c-K0-bCl" sceneMemberID="viewController">
+                <viewController id="c1c-K0-bCl" customClass="PartsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wfg-zz-K72"/>
                         <viewControllerLayoutGuide type="bottom" id="96E-ws-SgH"/>

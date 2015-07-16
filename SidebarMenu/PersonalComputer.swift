@@ -14,8 +14,6 @@ class PCParts: NSObject {
     var quality = ""
     var name = ""
     
-    
-    
 }
 
 class GraphicsCardGPU: PCParts{

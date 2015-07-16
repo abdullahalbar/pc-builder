@@ -13,7 +13,10 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     @IBOutlet weak var realRealNavBarTitle: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var typeLable: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    var switchController = 0
+
     //PUT PRODUCTS HERE
     
     var parts : String!
@@ -67,22 +70,31 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         switch parts{
         case "Graphics Proccessing Unit" :
             self.correctList = gPUPartsList
+            switchController = 1
         case "Central Proccessing Unit" :
             self.correctList = cPUPartsList
+            switchController = 2
         case "Heatsink/Fan" :
             self.correctList = hSFPartsList
+            switchController = 3
         case "Motherboard" :
             self.correctList = mBPartsList
+            switchController = 4
         case "Random Access Memory" :
             self.correctList = rAMPartsList
+            switchController = 5
         case "HDD" :
             self.correctList = hDDPartsList
+            switchController = 6
         case "SSD" :
             self.correctList = sSDPartsList
+            switchController = 7
         case "Power Supply" :
             self.correctList = pSUPartsList
+            switchController = 8
         case "Case" :
             self.correctList = casePartsList
+            switchController = 9
         default :
             print("error incorrect list")
         }
@@ -110,7 +122,8 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         
         cell.textLabel?.text = part
         return cell
-    }
+        
+        }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
@@ -119,6 +132,36 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let dvc = segue.destinationViewController as! PartsTableViewController
+        let index = tableView.indexPathForSelectedRow?.row
+        switch switchController {
+        case 1:
+            dvc.product1 = correctList[index!] as! GraphicsCardGPU
+        case 2:
+            dvc.product2 = correctList[index!] as! ProcessorCPU
+        case 3:
+            dvc.product3 = correctList[index!] as! HeatsinkHSF
+        case 4:
+            dvc.product4 = correctList[index!] as! MotherBoard
+        case 5:
+            dvc.product5 = correctList[index!] as! RAM
+        case 6:
+            dvc.product6 = correctList[index!] as! HDD
+        case 7:
+            dvc.product7 = correctList[index!] as! SSD
+        case 8:
+            dvc.product8 = correctList[index!] as! PowerSupply
+        case 9:
+            dvc.product9 = correctList[index!] as! Case
+        default:
+            print("error")
+        }
+    }
+
     
     
     /*
