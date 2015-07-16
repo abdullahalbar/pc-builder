@@ -476,10 +476,10 @@
             </objects>
             <point key="canvasLocation" x="991" y="2076"/>
         </scene>
-        <!--Parts Table View Controller-->
+        <!--Parts Table View Controller2-->
         <scene sceneID="te1-x2-wAZ">
             <objects>
-                <viewController id="c1c-K0-bCl" customClass="PartsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c1c-K0-bCl" customClass="PartsTableViewController2" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wfg-zz-K72"/>
                         <viewControllerLayoutGuide type="bottom" id="96E-ws-SgH"/>
@@ -488,12 +488,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-NI-8xp">
-                                <rect key="frame" x="20" y="72" width="260" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5l-sy-05v">
                                 <rect key="frame" x="20" y="130" width="260" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -501,7 +495,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q51-c2-f9K">
-                                <rect key="frame" x="20" y="188" width="260" height="50"/>
+                                <rect key="frame" x="20" y="188" width="303" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -512,14 +506,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIO-fg-vAg">
+                                <rect key="frame" x="20" y="304" width="260" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9F-EO-80G">
+                                <rect key="frame" x="20" y="362" width="260" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-NI-8xp">
+                                <rect key="frame" x="20" y="72" width="260" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="brandTextLabel" destination="v5l-sy-05v" id="J2U-9h-lr2"/>
-                        <outlet property="nameTextLabel" destination="WKw-NI-8xp" id="hhe-eG-5Xy"/>
-                        <outlet property="processorCountLabel" destination="EPt-WH-dNP" id="6Mw-PU-Ja6"/>
-                        <outlet property="socketLabel" destination="q51-c2-f9K" id="wMr-4d-nmU"/>
+                        <outlet property="brandTextLabel" destination="v5l-sy-05v" id="iuL-1X-GKc"/>
+                        <outlet property="nameTextLabel" destination="WKw-NI-8xp" id="gOb-L4-abe"/>
+                        <outlet property="processorCountLabel" destination="EPt-WH-dNP" id="9ah-qg-2sk"/>
+                        <outlet property="ramSupportedLabel" destination="TIO-fg-vAg" id="gNO-nN-0ow"/>
+                        <outlet property="ratingLabel" destination="y9F-EO-80G" id="6Mq-rb-Obf"/>
+                        <outlet property="socketLabel" destination="q51-c2-f9K" id="jzg-HW-jwW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bam-Vh-tUA" userLabel="First Responder" sceneMemberID="firstResponder"/>

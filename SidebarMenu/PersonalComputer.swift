@@ -58,6 +58,9 @@ class ProcessorCPU: PCParts{
     convenience init(type: String, brand: String, socket: String, processorCount: Int, cpuSpeed: String, ramsupported: String, name: String,  hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
+        self.socket = socket
+        self.processorCount = processorCount
+        self.ramsupported = ramsupported
         self.brand = brand
         self.hidden = hidden
         self.rating = rating
