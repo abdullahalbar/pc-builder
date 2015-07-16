@@ -94,14 +94,14 @@ class HeatsinkHSF: PCParts{
 class MotherBoard: PCParts{
     
     var type = "Motherboard"
-    
+    var socket = ""
     var brand = ""
     var hidden = true
     var rating = 0.0
     var price = 0.0
     var partDescription = ""
     
-    convenience init(type: String, name: String, brand: String, hidden: Bool, rating: Double, price: Double, partDescription: String){
+    convenience init(type: String, name: String, brand: String, socket:String, hidden: Bool, rating: Double, price: Double, partDescription: String){
         self.init()
         self.name = name
         self.brand = brand
@@ -212,7 +212,7 @@ class PowerSupply: PCParts{
 class Case: PCParts{
     
     
-    
+    var type = "Case1"
     var brand = ""
     var numberoffans = ""
     var compatibility = ""
