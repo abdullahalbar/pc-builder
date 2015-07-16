@@ -19,10 +19,18 @@ class PartsTableViewController: UIViewController {
     var product7 = SSD()
     var product8 = PowerSupply()
     var product9 = Case()
+    
 
+    @IBOutlet weak var nameTextLabel: UILabel!
+    @IBOutlet weak var brandTextLabel: UILabel!
+    @IBOutlet weak var socketLabel: UILabel!
+    @IBOutlet weak var processorCountLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextLabel.text = product2.name
+        brandTextLabel.text = product2.type
+        socketLabel.text = product2.socket
            }
 
     override func didReceiveMemoryWarning() {
