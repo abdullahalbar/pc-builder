@@ -75,7 +75,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     SSD(type: "Solid State Drive", name: "SANDISK EXTREME PRO 960 GB SSD", brand: "Sandisk", capacity: "960 GB", hidden: Bool, rating: 5.0, price: 429.99, partDescription: String)
     ]
     var pSUPartsList: [PowerSupply!] = [
-   PowerSupply(type: "PowerSupply", name: "seasonic platinum 1200w", brand: seasonic, Efficiency: "80+ platinum", power: "1200w", hidden: Bool, rating: 5.0, price: 150, partDescription: "")
+   PowerSupply(type: "PowerSupply", name: "seasonic platinum 1200w", brand: seasonic, Efficiency: "80+ platinum", power: "1200w", hidden: Bool, rating:h 5.0, price: 150, partDescription: "")
     
     ]
     var casePartsList: [Case!] = [
