@@ -62,7 +62,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize.height = self.view.frame.height * 2
+        scrollView.contentSize.height = self.view.frame.height * 3
         
         switch parts{
         case "Graphics Proccessing Unit" :
@@ -106,7 +106,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath) as UITableViewCell
-        let part = correctList[indexPath.row] as! String
+        let part = correctList[indexPath.row].name
         
         cell.textLabel?.text = part
         return cell
@@ -118,6 +118,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
             tableView.reloadData()
         }
     }
+    
     
     
     /*
